@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>readysetcode</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<style>
+#particles {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  opacity: 0.6;
+	height: 100vh;
+	z-index: -1;
+  pointer-events: none;
+}
+</style>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage"></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div id="particles"></div>
+  <div id="large-header" class="large-header">
+    <canvas id="demo-canvas" ></canvas>
+  </div>  <div class="jumbotron text-center">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <h1>readysetcode</h1>
+    <br>
+    <p>
+      <h3><p class="line-1 anim-typewriter">Explore Python programming and Artificial Intelligence!</p></h3>
+    </p>
+      <br>
+      <p>
+
+
+        <center><a href="" style="text-decoration: none; color: inherit"><button type="button" class="btn btn-success BTN-LG"> REGISTER NOW</button></center></a></center>
+
+      </div>
+
+                <div id="contact" class="container-fluid bg-grey">
+                  <h2 class="text-center">CONTACT</h2>
+                  <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                      <p>
+                        <h2>Contact us and we'll get back to you within 24 hours</h2>
+                        <p><span class="glyphicon glyphicon-map-marker"></span>
+                          <font color="black"> Chennai</font>
+                        </p>
+                        <p><span class="glyphicon glyphicon-phone"></span>
+                          <font color="black"> +91 9884894097</font>
+                        </p>
+                        <p><span class="glyphicon glyphicon-envelope"></span>
+                          <font color="black"> aditthya137@gmail.com</font>
+                        </p>
+                      </div>
+
+                    </div>
+                    <a href="#myPage" title="To Top">
+                      <span class="glyphicon glyphicon-chevron-up" style="font-size:24px"></span>
+                    </a>
+
+                  </div>
+
+                  <script>
+                  $(document).ready(function () {
+                    $("a[href='#myPage']").each(function(){
+                      $(this).click(function(){
+                        $('html,body').animate({ scrollTop: 0 }, 900);
+                        return false;
+                      });
+                    });
+
+                    $(window).scroll(function () {
+                      $(".slideanim").each(function () {
+                        var pos = $(this).offset().top;
+
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                          $(this).addClass("slide");
+                        }
+                      });
+                    });
+                  })
+                  </script>
+                  <script src="assets/js/particles.js"></script>
+
+                  </html>
