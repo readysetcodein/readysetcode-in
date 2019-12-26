@@ -13,8 +13,11 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Icons-->
   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
 <style>
 #particles {
 	display: block;
@@ -77,53 +80,62 @@
       <p>
         <center><a href="" style="text-decoration: none; color: inherit"><button type="button" class="btn btn-success BTN-LG"> REGISTER NOW</button></center></a></center>
       </div>
+<!--First Block ends-->
+<!--About us-->
+<div class = "container-fluid bg-grey"></div>
+<!-- Future implementation - Implement what people say about us -->
 
-                <div id="contact" class="container-fluid bg-grey">
-                  <h2 class="text-center">CONTACT</h2>
-                  <div class="row">
-                    <div class="col-sm-4"></div>
-                    <div class="col-sm-4">
-                      <p>
-                        <h2>Contact us and we'll get back to you within 24 hours</h2>
-                        <p><span class="glyphicon glyphicon-map-marker"></span>
-                          <font color="black"> Chennai</font>
-                        </p>
-                        <p><span class="glyphicon glyphicon-phone"></span>
-                          <font color="black"> +91 9884894097</font>
-                        </p>
-                        <p><span class="glyphicon glyphicon-envelope"></span>
-                          <font color="black"> aditthya137@gmail.com</font>
-                        </p>
-                      </div>
+<!-- What will you get out of our ML course-->
+<div></div>
 
-                    </div>
-                    <a href="#myPage" title="To Top">
-                      <span class="glyphicon glyphicon-chevron-up" style="font-size:24px"></span>
-                    </a>
+<!-- CONTACT DIV -->
+<div id="contact" class="container-fluid bg-grey">
+<h2 class="text-center">CONTACT</h2>
+<div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+    <p>
+      <h2>Contact us and we'll get back to you within 24 hours</h2>
+      <p><span class="glyphicon glyphicon-map-marker"></span>
+      <span md-colors="{color:'primary'}"><font color="black"> Chennai</font></span>
+      </p>
+      <p><span class="glyphicon glyphicon-phone"></span>
+        <span class="text-body">+91 9884894097</span>
+      </p>
+      <p><span class="glyphicon glyphicon-envelope"></span>
+        <span md-colors="{color:'primary'}"><font color="black"> aditthya137@gmail.com</font></span>
+      </p>
+    </div>
 
-                  </div>
+  </div>
+  <a href="#myPage" title="To Top">
+    <span class="pull-right glyphicon glyphicon-chevron-up" style="font-size:48px"></span>
+  </a>
 
-                  <script>
-                  $(document).ready(function () {
-                    $("a[href='#myPage']").each(function(){
-                      $(this).click(function(){
-                        $('html,body').animate({ scrollTop: 0 }, 900);
-                        return false;
-                      });
-                    });
+</div>
+<!-- CONTACT DIV -->
 
-                    $(window).scroll(function () {
-                      $(".slideanim").each(function () {
-                        var pos = $(this).offset().top;
+<script>
+$(document).ready(function () {
+  $("a[href='#myPage']").each(function(){
+    $(this).click(function(){
+      $('html,body').animate({ scrollTop: 0 }, 900);
+      return false;
+    });
+  });
 
-                        var winTop = $(window).scrollTop();
-                        if (pos < winTop + 600) {
-                          $(this).addClass("slide");
-                        }
-                      });
-                    });
-                  })
-                  </script>
-                  <script src="assets/js/particles.js"></script>
+  $(window).scroll(function () {
+    $(".slideanim").each(function () {
+      var pos = $(this).offset().top;
 
-                  </html>
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
+    });
+  });
+})
+</script>
+<script src="assets/js/particles.js"></script>
+
+</html>
